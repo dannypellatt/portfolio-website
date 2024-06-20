@@ -4,7 +4,6 @@ import React, { useState }  from 'react';
 import Navbar from '@/app/components/Navbar/Navbar';
 import HeroSection from '@/app/components/HeroSection/HeroSection';
 import AboutMeSection from '@/app/components/AboutMe/AboutMe';
-import CertificationsSection from '@/app/components/Certifications/Certifications';
 import ContactSection from '@/app/components/Contact/Contact';
 import Projects from '@/app/components/Projects/Projects';
 
@@ -23,9 +22,6 @@ const Home = () => {
         <section id="projects">
           <Projects />
         </section>
-        {/* <section id="certifications">
-          <CertificationsSection />
-        </section> */}
         <section id="contact">
           <ContactSection />
         </section> 
