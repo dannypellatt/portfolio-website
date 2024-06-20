@@ -80,6 +80,8 @@ const Projects = () => {
                 <Image
                   src={tab.imageSrc}
                   alt={tab.altText}
+                  width={240}
+                  height={180}
                   className={`w-40 h-24 sm:w-60 sm:h-30 ${activeTab === tab.id ? '' : ''}`}
                 />
                 <p className="mt-4 text-center font-semibold">{tab.brief}</p>
@@ -108,6 +110,9 @@ const Projects = () => {
               <Image
                 src={activeTabData.imageSrc}
                 alt={activeTabData.altText}
+                layout="responsive"
+                width={700}
+                height={475}
                 className="w-full h-auto"
               />
             )}
