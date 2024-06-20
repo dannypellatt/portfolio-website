@@ -104,8 +104,8 @@ const AboutMeSection = () => {
 
       <div className="col-span-1">
         <p className="mt-4 mb-8">
-          Full stack <strong>Software Developer & Product Manager</strong> with extensive experience designing, planning, developing, and launching software. I've had the privilege of working on some amazing products, at various <strong>veterinary companies</strong>, a <strong>software startup</strong>, a <strong>financial trust company</strong>, and more.
-          Over the years, I've used many different tools and techniques, some of the most memorable include:
+          Full stack <strong>Software Developer & Product Manager</strong> with extensive experience designing, planning, developing, and launching software. I&apos;ve had the privilege of working on some amazing products, at various <strong>veterinary companies</strong>, a <strong>software startup</strong>, a <strong>financial trust company</strong>, and more.
+          Over the years, I&apos;ve used many different tools and techniques, some of the most memorable include:
         </p>
         <div role="tablist" className="tabs tabs-lifted">
           <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Development" defaultChecked={true}/>
