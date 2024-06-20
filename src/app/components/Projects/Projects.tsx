@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Image from 'next/image';
 
 const tabs = [
   {
@@ -76,7 +77,7 @@ const Projects = () => {
             <div key={tab.id} className="flex flex-col items-center flex-shrink-0">
               {/* Option Card */}
               <div className='cursor-pointer' onClick={() => setActiveTab(tab.id)}>
-                <img
+                <Image
                   src={tab.imageSrc}
                   alt={tab.altText}
                   className={`w-40 h-24 sm:w-60 sm:h-30 ${activeTab === tab.id ? '' : ''}`}
@@ -104,7 +105,7 @@ const Projects = () => {
 
           <div className="m-4 justify-center order-1 md:order-2">
             {activeTabData && (
-              <img
+              <Image
                 src={activeTabData.imageSrc}
                 alt={activeTabData.altText}
                 className="w-full h-auto"
