@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.sticky-tabs {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+/* globals.css */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+/* Hero */
+
+.pinkNeonText {
+  color: #ff007f;
+  text-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 40px #ff007f, 0 0 80px #ff007f, 0 0 100px #ff007f;
+}
+
+.purpleNeonText {
+  color: #9400d3;
+  text-shadow: 0 0 5px #9400d3, 0 0 10px #9400d3, 0 0 20px #9400d3, 0 0 40px #9400d3, 0 0 80px #9400d3, 0 0 100px #9400d3;
+}
+
+.blueNeonText {
+  color: #00bfff;
+  text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 40px #00bfff, 0 0 80px #00bfff, 0 0 100px #00bfff;
+}
+
+.pulsate {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff;
+  }
+  50% {
+    text-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 4px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff;
+  }
+  100% {
+    text-shadow: 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff;
+  }
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
