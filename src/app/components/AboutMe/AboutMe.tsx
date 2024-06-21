@@ -96,8 +96,12 @@ const AboutMeSection = () => {
           </div> 
         </div>
         <div className='py-6'>
-          <button className="btn btn-xs btn-lg bg-base-100 border border-black text-black float-right rounded-full hover:text-base-100 hover:bg-black">See my resume</button>
-        </div>
+      <a href="/Danny Pellatt - Full Stack Web Developer.pdf" target="_blank" rel="noopener noreferrer">
+        <button className="btn btn-xs btn-lg bg-base-100 border border-black text-black float-right rounded-full hover:text-base-100 hover:bg-black">
+          See my resume
+        </button>
+      </a>
+    </div>
       </div>
       
       {/* Right Column */}
@@ -111,10 +115,10 @@ const AboutMeSection = () => {
           <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Development" defaultChecked={true}/>
           <div role="tabpanel" className="tab-content bg-base-300 border-base-300 rounded-box p-6">
             <ul>
-              <li className="mb-4"><strong>Programming Languages: </strong>HTML, CSS, JavaScript, TypeScript, C#, Python, SQL, JSON, XML, <i className='text-sm'>Python</i></li>
-              <li className="mb-4"><strong>Frameworks and Libraries: </strong>React, Next.js, .NET, jQuery, Bootstrap, Tailwind CSS, Angular, Entity Framework, Dapper, Blazor/Mudblazor, <i className='text-sm'>Vue.js</i></li>
-              <li className="mb-4"><strong>Databases and APIs: </strong>MySQL, PostgreSQL, Microsoft SQL Server, SQLite, MongoDB, RESTful APIs, Postman, SOAP, AirTable, <i className='text-sm'>GraphQL, Swagger/OpenAPI</i></li>
-              <li className="mb-4"><strong>Development Tools and Environments: </strong>Visual Studio Code, Visual Studio, Git, Docker, Kubernetes, AWS, Netlify, GitHub Pages, npm/yarn, Webpack, <i className='text-sm'>Babel, Jenkins</i></li>
+              <li className="mb-4"><strong>Programming Languages: </strong>HTML, CSS, JavaScript, TypeScript, C#, Python, SQL, JSON, XML, Python</li>
+              <li className="mb-4"><strong>Frameworks and Libraries: </strong>React, Next.js, .NET, jQuery, Bootstrap, Tailwind CSS, Angular, Entity Framework, Dapper, Blazor/Mudblazor, Vue.js</li>
+              <li className="mb-4"><strong>Databases and APIs: </strong>MySQL, PostgreSQL, Microsoft SQL Server, SQLite, MongoDB, RESTful APIs, Postman, SOAP, AirTable, GraphQL, Swagger/OpenAPI</li>
+              <li className="mb-4"><strong>Development Tools and Environments: </strong>Visual Studio Code, Visual Studio, Git, Docker, Kubernetes, AWS, Netlify, GitHub Pages, npm/yarn, Webpack, Babel, Jenkins</li>
               <li className=""><strong>Testing and Debugging: </strong>Unit testing (with NUnit, Jest), Integration testing, Debugging tools (Chrome DevTools, Visual Studio Debugger)</li>
             </ul>
           </div>

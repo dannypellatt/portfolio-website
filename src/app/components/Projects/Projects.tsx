@@ -82,7 +82,7 @@ const Projects = () => {
                   alt={tab.altText}
                   width={240}
                   height={180}
-                  className={`w-40 h-24 sm:w-60 sm:h-30 ${activeTab === tab.id ? '' : ''}`}
+                  className={`w-50 h-30 ${activeTab === tab.id ? '' : ''}`}
                 />
                 <p className="mt-4 text-center font-semibold">{tab.brief}</p>
               </div>
